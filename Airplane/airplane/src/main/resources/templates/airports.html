@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airports</title>
+</head>
+<body>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr th:each="airport:${airports}">
+      <td><span th:text="${airport.name}">Name</span></td>
+      <td><span th:text="${airport.latitude}">Latitude</span></td>
+      <td><span th:text="${airport.longitude}">Longitude</span></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>

@@ -1,7 +1,13 @@
 package sa.dais.unive.it.airplane;
 
-import java.util.Objects;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+import java.util.Objects;
+@Entity
+@Table(name="airport")
 public class Airport {
     private String name;
 
@@ -10,6 +16,8 @@ public class Airport {
     public Airport() {
     }
 
+    @Id
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -18,6 +26,7 @@ public class Airport {
         this.name = name;
     }
 
+    @Column(name = "latitude")
     public int getLatitude() {
         return latitude;
     }
@@ -26,6 +35,7 @@ public class Airport {
         this.latitude = latitude;
     }
 
+    @Column(name = "longitude")
     public int getLongitude() {
         return longitude;
     }
