@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lacture 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/AirplaneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/AirportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/airports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lecture 7 layered architecture">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/FlightRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/departed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/Airport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,7 @@
       <workItem from="1698324611506" duration="2870000" />
       <workItem from="1698393258996" duration="9000" />
       <workItem from="1698924619165" duration="957000" />
-      <workItem from="1698929658618" duration="1826000" />
+      <workItem from="1698929658618" duration="3668000" />
     </task>
     <task id="LOCAL-00001" summary="lacture 7">
       <created>1698327452168</created>
@@ -96,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698327452168</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lecture 7 layered architecture">
+      <created>1698934468307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698934468307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lacture 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lacture 7" />
+    <MESSAGE value="lecture 7 layered architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 7 layered architecture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
