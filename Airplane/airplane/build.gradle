@@ -23,6 +23,9 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.mysql:mysql-connector-j'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.plugin:spring-plugin-core:2.0.0.RELEASE'
+    implementation 'org.springframework.plugin:spring-plugin-metadata:2.0.0.RELEASE'
+
 }
 
 tasks.named('test') {

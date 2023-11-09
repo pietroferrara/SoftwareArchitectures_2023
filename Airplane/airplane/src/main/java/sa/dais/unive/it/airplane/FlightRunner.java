@@ -2,9 +2,10 @@ package sa.dais.unive.it.airplane;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
-import org.apache.camel.Route;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
+import sa.dais.unive.it.airplane.plugin.AirplaneMoverRegistry;
+import sa.dais.unive.it.airplane.plugin.AirplaneMoverPlugin;
 
 public class FlightRunner {
 
@@ -13,11 +14,14 @@ public class FlightRunner {
 
     public AirplaneRepository airplaneRepository;
 
+    private AirplaneMoverPlugin plugin;
+
 
     public FlightRunner(Airplane airplane, Airport airport, AirplaneRepository airplaneRepository) {
         this.airplane = airplane;
         this.airport = airport;
         this.airplaneRepository = airplaneRepository;
+        this.plugin = AirplaneMoverRegistry.registry.getPluginFor(airplane).get();
     }
 
     private CamelContext ctx;
@@ -42,7 +46,7 @@ public class FlightRunner {
         }
 
         private void progress(Exchange exchange) {
-            approach(airplane, airport);
+            plugin.approach(airplane, airport);
             airplaneRepository.save(airplane);
             if(samePosition(airplane, airport)) {
                 System.out.println("Destination arrived!");
@@ -53,19 +57,6 @@ public class FlightRunner {
         private boolean samePosition(Airplane airplane, Airport airport) {
             return airplane.getLatitude()==airport.getLatitude() &&
                     airplane.getLongitude()==airport.getLongitude();
-        }
-
-        private void approach(Airplane airplane, Airport airport) {
-            if(airplane.getLatitude()!=airport.getLatitude()) {
-                if(airplane.getLatitude()> airport.getLatitude())
-                    airplane.setLatitude(airplane.getLatitude()-1);
-                else airplane.setLatitude(airplane.getLatitude()+1);
-            }
-            if(airplane.getLongitude()!=airport.getLongitude()) {
-                if(airplane.getLongitude()> airport.getLongitude())
-                    airplane.setLongitude(airplane.getLongitude()-1);
-                else airplane.setLongitude(airplane.getLongitude()+1);
-            }
         }
     }
 }

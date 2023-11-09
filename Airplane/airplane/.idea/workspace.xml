@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lecture 7 layered architecture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/FlightRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/departed.html" afterDir="false" />
+    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lecture 7 [minimal] pipeline architecture">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/plugin/AirbusAirplaneMoverPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/plugin/AirplaneMoverPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/plugin/AirplaneMoverRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/plugin/BoeingAirplaneMoverPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/FlightRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/FlightRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,13 +49,18 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Pietro Ferrara/SoftwareArchitectures_2023/Airplane/airplane/src/main/resources/templates",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "9c8894ca5aa07081f34a4915aca48c5e"
   }
 }]]></component>
@@ -60,6 +69,7 @@
       <recent name="C:\Users\Pietro Ferrara\SoftwareArchitectures_2023\Airplane\airplane\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sa.dais.unive.it.airplane.plugin" />
       <recent name="sa.dais.unive.it.airplane" />
     </key>
   </component>
@@ -84,6 +94,8 @@
       <workItem from="1698393258996" duration="9000" />
       <workItem from="1698924619165" duration="957000" />
       <workItem from="1698929658618" duration="3668000" />
+      <workItem from="1699000373312" duration="39000" />
+      <workItem from="1699534529693" duration="3186000" />
     </task>
     <task id="LOCAL-00001" summary="lacture 7">
       <created>1698327452168</created>
@@ -99,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698934468307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lecture 7 [minimal] pipeline architecture">
+      <created>1699000403137</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699000403137</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lacture 7" />
     <MESSAGE value="lecture 7 layered architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 7 layered architecture" />
+    <MESSAGE value="lecture 7 [minimal] pipeline architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 7 [minimal] pipeline architecture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
