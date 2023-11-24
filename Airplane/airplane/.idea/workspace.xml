@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lecture 8 microkernel/plug-in architecture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/ServiceAirplaneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/ServiceAirportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/ServiceFlightController.java" afterDir="false" />
+    <list default="true" id="3e365b1d-bf5c-41ea-a5f6-6d40538d1ca6" name="Changes" comment="lecture 9 service-based architecture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/UIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/ServiceFlightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/dais/unive/it/airplane/ServiceFlightController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,9 @@
       <workItem from="1699534529693" duration="3478000" />
       <workItem from="1699607648257" duration="8000" />
       <workItem from="1700124687965" duration="720000" />
-      <workItem from="1700139277011" duration="2076000" />
+      <workItem from="1700139277011" duration="3321000" />
+      <workItem from="1700213015116" duration="7000" />
+      <workItem from="1700836615803" duration="2027000" />
     </task>
     <task id="LOCAL-00001" summary="lacture 7">
       <created>1698327452168</created>
@@ -126,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699541104320</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lecture 9 service-based architecture">
+      <created>1700145762322</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145762322</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +155,8 @@
     <MESSAGE value="lecture 7 layered architecture" />
     <MESSAGE value="lecture 7 [minimal] pipeline architecture" />
     <MESSAGE value="lecture 8 microkernel/plug-in architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture 8 microkernel/plug-in architecture" />
+    <MESSAGE value="lecture 9 service-based architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture 9 service-based architecture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
